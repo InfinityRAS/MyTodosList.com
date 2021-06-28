@@ -9,6 +9,7 @@ import {
   Route
 } from "react-router-dom";
 import { About } from "./MyComponents/About";
+import { NotFound } from "./notFound";
 
 function App() {
   let initTodo;
@@ -54,7 +55,7 @@ function App() {
       <Router>
         <Header title="My Header component" searchBar={true} />
         <Switch>
-          <Route path="/" render={() => {
+          <Route exact path="/" render={() => {
             return (
               <>
                 <AddTodo addTodo={addTodo} />
@@ -63,8 +64,11 @@ function App() {
             )
           }}>
           </Route>
-          <Route path="/about">
+          <Route exact path="/about">
             <About />
+          </Route>
+          <Route>
+            <NotFound />
           </Route>
 
         </Switch>

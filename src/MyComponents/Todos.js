@@ -8,7 +8,7 @@ export const Todos = (probs) => {
             {probs.todos.length === 0 ? <h3>No Todos to Display.. Click 'Add Todo' button to add a todo</h3> :
 
                 probs.todos.map((todo) => {
-                    return <TodoItems todo={todo} key={probs.todos.sno} onDelete={probs.onDelete} />
+                    return <TodoItems todo={todo} key={todo.sno} onDelete={probs.onDelete} />
                 })
 
             }
