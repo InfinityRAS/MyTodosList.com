@@ -9,7 +9,7 @@ import {
   Route
 } from "react-router-dom";
 import { About } from "./MyComponents/About";
-import { NotFound } from "./notFound";
+import { NotFound } from "./notFound"; 
 
 function App() {
   let initTodo;
@@ -53,7 +53,7 @@ function App() {
   return (
     <>
       <Router>
-        <Header title="My Header component" searchBar={true} />
+        <Header title="MyTodoList.com" searchBar={true} />
         <Switch>
           <Route exact path="/" render={() => {
             return (
