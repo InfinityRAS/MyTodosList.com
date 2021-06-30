@@ -1,5 +1,5 @@
 {
-  "name": "todos-list",
+  "name": "MyTodosList.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,10 +11,11 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-top-loading-bar": "^2.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "SET PORT=80 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

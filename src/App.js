@@ -9,7 +9,8 @@ import {
   Route
 } from "react-router-dom";
 import { About } from "./MyComponents/About";
-import { NotFound } from "./notFound"; 
+import { NotFound } from "./notFound";
+import LoadingBar from 'react-top-loading-bar'
 
 function App() {
   let initTodo;
@@ -50,10 +51,19 @@ function App() {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos])
 
+  const [progress, setProgress] = useState(0)
+
   return (
     <>
       <Router>
-        <Header title="MyTodoList.com" searchBar={true} />
+        <div>
+          <LoadingBar
+            color='#f11946'
+            progress={progress}
+            onLoaderFinished={() => setProgress(0)}
+          />
+        </div>
+        <Header title="MyTodoList.com" searchBar={true} setProgress={setProgress} />
         <Switch>
           <Route exact path="/" render={() => {
             return (
