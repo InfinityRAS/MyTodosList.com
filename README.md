@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# MyTodosList.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Hey Coders!
 
-In the project directory, you can run:
+Welcome to MyTodosList.com, 
 
-### `yarn start`
+This is my first react-project namely: MyTodosList.com. Using this website you can add some todos- means the work that you're needed to do in future.. You can add them up here, so that you will not forget them and once you've done the todo, you can delete the todo also! 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To get started you can follow the following instructions!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You first are needed to download and install git from [Here](https://git-scm.com/downloads)
+and then open any folder in your Computer, you're needed to right click and click on git bash here option.
 
-### `yarn build`
+After opening the git bash run the following command (if you've the ssh key configured in your pc, like me)
+``` bash 
+git clone git@github.com:AryanSisodiya/MyTodoList.com.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+and if you don't have ssh configured in your pc, don't worry, run the following command
+``` bash
+git clone https://github.com/AryanSisodiya/MyTodoList.com.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Starting the Server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After cloning the repoitory in your pc, run this command
+``` bash
+cd MyTodoList.com/
+```
 
-### `yarn eject`
+After you run the above command, run the following command to start the react-app in development mode! 
+``` bash
+npm i
+npm start 
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+After the server is Started, you need to go [localhost:80](localhost:80)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Components
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+MyTodoList.com has three main Components, i.e., Header, Add Todo Input form and the Todos section
 
-## Learn More
+### The Header Component
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The Header Component consists of the links used for going to different pages of this Website.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+It basically consists the Home page link and a About page link.. and a Header title with home as an endpoint
 
-### Code Splitting
+Since it's a react app so the page wouldn't reload when you click on links... a top-loading-bar is created for more better look
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### The Add Todo form Component
 
-### Analyzing the Bundle Size
+The add todo form is basically consists of a input form for giving an title to your todo and a short description textarea..
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Adding a Todo
 
-### Making a Progressive Web App
+To add a todo, you need to fill the input forms because todo will not be added if you leave them blank
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+After you fill out the form, you're simply needed to click on Add Todo button to add your Todo.
 
-### Advanced Configuration
+### Viewing the Todos - The Todo Display Component
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Once you click on add Todo button, todo with the auto-generated todo number will be added, and displayed in the Todo Display Component
 
-### Deployment
+Todos will be saved in the localstorage, so you will not get them lost, once you reload the page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Deleting a Todo
 
-### `yarn build` fails to minify
+To delete a Todo, you need to click on the Delete Todo button, present below the Todo's description
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Once you click on the delete todo button your todos will be deleted permanently, so click that button after thinking alot!
+
+
+
+
+
+## Authors
+
+- [Aryan Sisodiya](https://www.github.com/AryanSisodiya)
+
+  
+## Contributing
+
+Contributions are always welcome!
+
+
+  
+## Documentation
+
+[React Js](https://reactjs.org/docs/getting-started.html)
+
+[React Router DOM](https://reactrouter.com/web/guides/quick-start)
+
+[React Top Loading Bar](https://www.npmjs.com/package/react-top-loading-bar)
+
+[Node Js](https://nodejs.org/en/docs/)
+
+[NPM](https://docs.npmjs.com/)
+
+
+## I hope you may like this website...
+### Happy Coding!
+  
