@@ -7,8 +7,9 @@ export const Footer = () => {
     return (
         <footer className="bg-dark text-light py-3">
             <p className="text-center" style={paraStyle}>
-                Copyright &copy; MyTodosList.com | Created by Aryan sisodiya
+                Copyright &copy; MyTodosList.com 
             </p>
+	<div className="text-center">Created by Application Aryan Official</div>
         </footer>
     )
 }
